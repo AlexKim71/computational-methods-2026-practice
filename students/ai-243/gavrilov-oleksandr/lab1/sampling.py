@@ -1,4 +1,9 @@
+import io
+import sys
+
 from providers import make_client
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 # Використовуємо локальну модель для експериментів
 client, model = make_client("local")
