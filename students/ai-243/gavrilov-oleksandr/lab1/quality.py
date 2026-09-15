@@ -1,7 +1,6 @@
 import json
 
 from dotenv import load_dotenv
-
 from providers import make_client
 
 load_dotenv()
@@ -30,6 +29,7 @@ results = {}
 # Перелік провайдерів для тестування (включаючи твою локальну та хмарну моделі)
 providers_to_test = [
     ("local", "llama3.2:3b"),
+    ("local", "qwen3:4b"),  # <--- ДОДАЙ ОСЬ ЦЕЙ РЯДОК
     ("cloud", "qwen/qwen3.8-27b"),  # або інша хмарна модель, яку ти налаштував
 ]
 
