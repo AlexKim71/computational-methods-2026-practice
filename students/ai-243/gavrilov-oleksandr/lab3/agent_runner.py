@@ -1,4 +1,7 @@
 """Прогін агента на всіх питаннях із tasks.json."""
+from dotenv import load_dotenv
+load_dotenv()
+
 import sys
 import os
 

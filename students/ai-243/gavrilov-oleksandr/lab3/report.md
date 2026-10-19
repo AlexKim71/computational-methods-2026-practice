@@ -263,7 +263,7 @@ print(json.dumps(SCHEMAS[2], ensure_ascii=False, indent=2))
 
 Langfuse підключено до будь-яких змін в агенті: `from langfuse.openai import OpenAI`, `@observe()` на `run_agent`, `@observe(name="call_tool")` на диспетчері, `propagate_attributes(trace_name=f"{RUN_TAG}-{task['id']}", tags=[RUN_TAG])` та `get_client().flush()`.
 
-![Структура події в Langfuse](./trace.png)
+![Структура події в Langfuse](trace.png)
 
 Будова однієї події (підписи елементів):
 
